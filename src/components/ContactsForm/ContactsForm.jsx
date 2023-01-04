@@ -24,9 +24,10 @@ const ContactsForm = ({ handleSubmitForm }) => {
   const getContactFormData = e => {
     e.preventDefault();
 
-    handleSubmitForm(name, phone);
-    setName('');
-    setPhone('');
+    if (handleSubmitForm(name, phone)) {
+      setName('');
+      setPhone('');
+    }
   };
 
   return (
