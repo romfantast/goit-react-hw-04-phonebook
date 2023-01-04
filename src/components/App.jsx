@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react';
+import { nanoid } from 'nanoid';
 import { Notify } from 'notiflix';
 import css from './App.module.css';
 import ContactsAppCaption from './ContactsAppCaption/ContactsAppCaption';
 import ContactsForm from './ContactsForm/ContactsForm';
 import InputFilterContact from './InputFilterContact/InputFilterContact';
 import ContactsList from './ContactsList/ContactsList';
-import { nanoid } from 'nanoid';
 
 const MY_CONTACTS = 'my-contacts';
 
