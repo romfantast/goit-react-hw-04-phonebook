@@ -34,7 +34,6 @@ const App = () => {
     }
     const newContact = { id: contactId, name, phone };
     setContacts(prevContacts => [...prevContacts, newContact]);
-    saveContactsToLs(contacts);
     return true;
   };
 
